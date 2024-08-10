@@ -23,7 +23,6 @@ import java.util.List;
 
 public class AttachmentQueryCategory implements IRecipeCategory<AttachmentQueryEntry> {
     public static final RecipeType<AttachmentQueryEntry> ATTACHMENT_QUERY = RecipeType.create(GunMod.MOD_ID, "attachment_query", AttachmentQueryEntry.class);
-    public static final int MAX_GUN_SHOW_COUNT = 60;
     private static final Text TITLE = Text.translatable("jei.tacz.attachment_query.title");
     private final IDrawableStatic bgDraw;
     private final IDrawable slotDraw;

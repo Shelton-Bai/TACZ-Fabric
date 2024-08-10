@@ -27,6 +27,15 @@
 		"jei_mod_plugin": [
 			"com.tacz.guns.compat.jei.GunModPlugin"
 		],
+		"rei_common": [
+          "com.tacz.guns.compat.rei.GunModPlugin"
+		],
+		"rei_client": [
+			"com.tacz.guns.compat.rei.GunModClientPlugin"
+		],
+		"emi": [
+			"com.tacz.guns.compat.emi.GunModPlugin"
+		],
 		"modmenu": [
 			"com.tacz.guns.compat.modmenu.ModMenuIntegration"
 		]

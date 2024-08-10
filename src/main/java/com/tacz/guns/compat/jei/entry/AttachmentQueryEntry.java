@@ -6,7 +6,6 @@ import com.tacz.guns.api.item.GunTabType;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
-import com.tacz.guns.compat.jei.category.AttachmentQueryCategory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
@@ -14,6 +13,11 @@ import java.util.List;
 import java.util.Locale;
 
 public class AttachmentQueryEntry {
+    public static final int MAX_GUN_SHOW_COUNT = 60;
+
+    private final Identifier id;
+    private final GunTabType type;
+
     /**
      * 显示的配件
      */
@@ -28,10 +32,12 @@ public class AttachmentQueryEntry {
     private List<ItemStack> extraAllowGunStacks;
 
     public AttachmentQueryEntry(Identifier attachmentId, GunTabType type) {
+        this.id = attachmentId;
+        this.type = type;
         this.attachmentStack = AttachmentItemBuilder.create().setId(attachmentId).build();
         this.allowGunStacks = Lists.newArrayList();
         this.extraAllowGunStacks = Lists.newArrayList();
-        this.addAllAllowGuns(type);
+        this.addAllAllowGuns();
         this.dividedGuns();
     }
 
@@ -48,6 +54,14 @@ public class AttachmentQueryEntry {
         return entries;
     }
 
+    public Identifier getId() {
+        return id;
+    }
+
+    public GunTabType getType() {
+        return type;
+    }
+
     public ItemStack getAttachmentStack() {
         return attachmentStack;
     }
@@ -60,7 +74,7 @@ public class AttachmentQueryEntry {
         return extraAllowGunStacks;
     }
 
-    private void addAllAllowGuns(GunTabType type) {
+    private void addAllAllowGuns() {
         TimelessAPI.getAllCommonGunIndex().forEach(entry -> {
             String tabType = type.name().toLowerCase(Locale.US);
             String gunType = entry.getValue().getType();
@@ -78,9 +92,9 @@ public class AttachmentQueryEntry {
 
     private void dividedGuns() {
         int size = this.allowGunStacks.size();
-        if (size >= AttachmentQueryCategory.MAX_GUN_SHOW_COUNT) {
-            this.extraAllowGunStacks = this.allowGunStacks.subList(AttachmentQueryCategory.MAX_GUN_SHOW_COUNT, size);
-            this.allowGunStacks = this.allowGunStacks.subList(0, AttachmentQueryCategory.MAX_GUN_SHOW_COUNT);
+        if (size >= MAX_GUN_SHOW_COUNT) {
+            this.extraAllowGunStacks = this.allowGunStacks.subList(MAX_GUN_SHOW_COUNT, size);
+            this.allowGunStacks = this.allowGunStacks.subList(0, MAX_GUN_SHOW_COUNT);
         }
     }
 }
