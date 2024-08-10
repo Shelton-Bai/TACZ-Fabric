@@ -101,7 +101,7 @@ public class GunHudOverlay {
         // Module Version Information
         String minecraftVersion = SharedConstants.getGameVersion().getName();
         String modVersion = FabricLoader.getInstance().getModContainer(GunMod.MOD_ID).orElseThrow().getMetadata().getVersion().getFriendlyString();
-        String debugInfo = String.format("%s-%s", minecraftVersion, modVersion);
+        String debugInfo = String.format("%s-%s (fabric)", minecraftVersion, modVersion);
         // copies
         poseStack.push();
         poseStack.scale(0.5f, 0.5f, 1);
