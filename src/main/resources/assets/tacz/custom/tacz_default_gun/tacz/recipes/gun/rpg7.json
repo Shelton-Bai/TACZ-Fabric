@@ -4,17 +4,11 @@
       "item": {
         "tag": "c:iron_ingots"
       },
-      "count": 38
+      "count": 70
     },
     {
       "item": {
-        "tag": "c:lapis"
-      },
-      "count": 6
-    },
-    {
-      "item": {
-        "tag": "minecraft:logs"
+        "tag": "c:gold_ingots"
       },
       "count": 8
     },
@@ -22,25 +16,13 @@
       "item": {
         "tag": "c:lapis"
       },
-      "count": 6
+      "count": 4
     },
     {
       "item": {
         "tag": "minecraft:logs"
       },
-      "count": 8
-    },
-    {
-      "item": {
-        "tag": "c:lapis"
-      },
-      "count": 6
-    },
-    {
-      "item": {
-        "tag": "minecraft:logs"
-      },
-      "count": 8
+      "count": 10
     }
   ],
   "result": {
