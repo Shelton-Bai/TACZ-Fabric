@@ -18,6 +18,7 @@ public class GunMonMixinPlugin implements IMixinConfigPlugin {
         return switch (mixinClassName) {
             case "com.tacz.guns.mixin.common.RaycastContextMixin" -> !fabricLoader.isModLoaded("porting_lib_base");
             case "com.tacz.guns.mixin.common.CarryOnMixin" -> fabricLoader.isModLoaded(CompatRegistry.CARRY_ON_ID);
+            case "com.tacz.guns.mixin.common.ItemMixinForTweakeroo" -> fabricLoader.isModLoaded("tweakeroo");
             default -> true;
         };
     }

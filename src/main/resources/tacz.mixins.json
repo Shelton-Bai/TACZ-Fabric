@@ -8,6 +8,7 @@
     "common.CarryOnMixin",
     "common.EntityMixin",
     "common.EntityTypeMixin",
+    "common.ItemMixinForTweakeroo",
     "common.ItemStackMixin",
     "common.LivingEntityMixin",
     "common.RaycastContextMixin",

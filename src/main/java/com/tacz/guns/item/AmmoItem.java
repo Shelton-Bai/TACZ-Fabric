@@ -36,6 +36,7 @@ public class AmmoItem extends Item implements AmmoItemDataAccessor, IItem {
         return this.getMaxCount(stack) == 1 && this.isDamageable();
     }
 
+    @Override
     public int getMaxCount(ItemStack stack) {
         if (stack.getItem() instanceof IAmmo iAmmo) {
             return TimelessAPI.getCommonAmmoIndex(iAmmo.getAmmoId(stack))

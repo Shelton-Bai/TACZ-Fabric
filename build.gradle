@@ -123,6 +123,8 @@ dependencies {
 //	modRuntimeOnly("maven.modrinth:emi:${project.emi_version}+${project.minecraft_version}+fabric")
 	modRuntimeOnly("maven.modrinth:jei:${project.jei_version}")
 	modRuntimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:${project.rei_version}")
+	modRuntimeOnly "maven.modrinth:tweakeroo:0.17.1"
+	modRuntimeOnly "maven.modrinth:malilib:0.16.3"
 
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
