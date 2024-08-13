@@ -3,6 +3,7 @@ package com.tacz.guns.client.resource.texture;
 
 import com.mojang.blaze3d.platform.TextureUtil;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.tacz.guns.GunMod;
 import net.minecraft.client.texture.AbstractTexture;
 import net.minecraft.client.texture.NativeImage;
 import net.minecraft.resource.ResourceManager;
@@ -42,7 +43,7 @@ public class FilePackTexture extends AbstractTexture {
                 TextureUtil.prepareImage(this.getGlId(), 0, width, height);
                 imageIn.upload(0, 0, 0, 0, 0, width, height, false, false, false, true);
             } catch (IOException e) {
-                e.printStackTrace();
+                GunMod.LOGGER.error("Failed to load texture:", e);
             }
         }
     }
