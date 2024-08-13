@@ -49,7 +49,7 @@ public final class IrisCompat {
         if (FabricLoader.getInstance().isModLoaded(CompatRegistry.IRIS)) {
             return END_BATCH_FUNCTION.apply(bufferSource);
         }
-        return true;
+        return false;
     }
 
     static {
