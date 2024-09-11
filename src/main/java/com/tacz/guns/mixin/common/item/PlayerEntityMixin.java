@@ -1,9 +1,9 @@
 package com.tacz.guns.mixin.common.item;
 
 import com.mojang.authlib.GameProfile;
+import com.tacz.guns.util.LazyOptional;
 import com.tacz.guns.util.item.IItemHandler;
 import com.tacz.guns.util.item.wrapper.*;
-import com.tacz.guns.util.LazyOptional;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;

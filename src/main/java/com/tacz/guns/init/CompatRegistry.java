@@ -2,7 +2,6 @@ package com.tacz.guns.init;
 
 import com.tacz.guns.compat.carryon.BlackList;
 import com.tacz.guns.compat.iris.IrisCompat;
-import net.fabricmc.api.EnvType;
 import net.fabricmc.loader.api.FabricLoader;
 
 public class CompatRegistry {

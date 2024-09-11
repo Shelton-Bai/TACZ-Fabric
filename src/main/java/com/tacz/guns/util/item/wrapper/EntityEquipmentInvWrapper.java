@@ -1,9 +1,9 @@
 package com.tacz.guns.util.item.wrapper;
 
 import com.google.common.collect.ImmutableList;
+import com.tacz.guns.util.LazyOptional;
 import com.tacz.guns.util.item.IItemHandlerModifiable;
 import com.tacz.guns.util.item.ItemHandlerHelper;
-import com.tacz.guns.util.LazyOptional;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;

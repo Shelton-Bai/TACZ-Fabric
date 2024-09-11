@@ -4,14 +4,10 @@ import com.tacz.guns.api.LogicalSide;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.event.common.EntityHurtByGunEvent;
 import com.tacz.guns.client.renderer.other.GunHurtBobTweak;
-import net.fabricmc.api.EnvType;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
-import org.jetbrains.annotations.Nullable;
 
 public class PlayerHurtByGunEvent {
 

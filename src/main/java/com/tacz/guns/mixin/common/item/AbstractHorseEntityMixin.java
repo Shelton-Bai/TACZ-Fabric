@@ -1,8 +1,8 @@
 package com.tacz.guns.mixin.common.item;
 
+import com.tacz.guns.util.LazyOptional;
 import com.tacz.guns.util.item.IItemHandler;
 import com.tacz.guns.util.item.wrapper.InvWrapper;
-import com.tacz.guns.util.LazyOptional;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.passive.AbstractHorseEntity;
 import net.minecraft.entity.passive.AnimalEntity;
