@@ -12,9 +12,9 @@ public class LuaAnimationState<T extends AnimationStateContext> implements Anima
     private final @Nullable LuaFunction transitionFunction;
 
     /**
-     * 此方法用于通过 lua 脚本生成状态。不应该被直接调用，而是通过工厂生成。
+     * This method is used to generate states through a Lua script. It should not be called directly but rather generated through a factory.
      *
-     * @param luaTable 包含各个函数的表
+     * @param luaTable A table containing various functions
      * @see LuaStateMachineFactory
      */
     LuaAnimationState(@NotNull LuaTable luaTable) {
