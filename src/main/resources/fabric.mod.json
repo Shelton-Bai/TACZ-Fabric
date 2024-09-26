@@ -3,7 +3,7 @@
 	"id": "tacz",
 	"version": "${version}",
 	"name": "Timeless & Classics Guns: Zero",
-	"description": "",
+	"description": "The most Immersive and Customizable modern FPS experience in Minecraft - A complete Remaster of the TaC gun mod by the original team.",
 	"authors": [
 		"Serene Wave Studio | Modified by We-Cant-Coding"
 	],
@@ -28,7 +28,7 @@
 			"com.tacz.guns.compat.jei.GunModPlugin"
 		],
 		"rei_common": [
-          	"com.tacz.guns.compat.rei.GunModPlugin"
+			"com.tacz.guns.compat.rei.GunModPlugin"
 		],
 		"rei_client": [
 			"com.tacz.guns.compat.rei.GunModClientPlugin"
@@ -55,6 +55,9 @@
 		"porting_lib_tags": "*",
 		"porting_lib_entity": ">=2.3.4+1.20.1",
 		"mkb": ">=1.2.0"
+	},
+	"breaks":{
+		"iris": "<=1.6.17"
 	},
 	"custom": {
 		"loom:injected_interfaces": {

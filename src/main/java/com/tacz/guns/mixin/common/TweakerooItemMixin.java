@@ -9,9 +9,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Item.class)
-public class ItemMixinForTweakeroo {
+public class TweakerooItemMixin {
 
-    @SuppressWarnings("MixinAnnotationTarget")
+    @SuppressWarnings("MixinAnnotationTarget, UnresolvedMixinReference")
     @Inject(method = "getMaxStackSize(Lnet/minecraft/item/ItemStack;)I", at = @At("HEAD"), cancellable = true)
     private void getMaxStackSize(ItemStack stack, CallbackInfoReturnable<Integer> cir) {
         if (((Item) (Object) this) instanceof AmmoItem item) {
