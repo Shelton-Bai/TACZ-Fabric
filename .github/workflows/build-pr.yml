@@ -1,7 +1,7 @@
 # Used when building external pull requests
 # We don't want to publish build artifacts or expose our other caches to possibly untrusted code
 
-name: Build - Commit
+name: Build - PR
 on: [ pull_request ]
 
 jobs:
@@ -24,7 +24,7 @@ jobs:
       - name: Setup JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: 'corretto'
           java-version: ${{ matrix.java }}
 
       - name: Setup Gradle

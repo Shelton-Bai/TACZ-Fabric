@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        java: [ 21 ]
+        java: [ 17 ]
 
     steps:
       - name: Extract current branch name
@@ -26,7 +26,7 @@ jobs:
       - name: Setup JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: 'corretto'
           java-version: ${{ matrix.java }}
 
       - name: Setup Gradle

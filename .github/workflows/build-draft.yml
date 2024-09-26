@@ -1,7 +1,8 @@
 # Used when a draft is pushed to GitHub
 # This does not make use of any caching as to ensure a clean build
 
-name: Build - Release
+
+name: Build - Draft
 on:
   release:
     types: [ released ]
@@ -26,7 +27,8 @@ jobs:
       - name: Setup JDK ${{ matrix.java }}
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
+          distribution: 'corretto'
+
           java-version: ${{ matrix.java }}
 
       - name: Setup Gradle

@@ -122,7 +122,7 @@ processResources {
 
 tasks.withType(JavaCompile).configureEach {
 	options.release = 17
-	options.encoding = 'UTF-8'
+	options.encoding = 'utf-8'
 }
 
 java {
