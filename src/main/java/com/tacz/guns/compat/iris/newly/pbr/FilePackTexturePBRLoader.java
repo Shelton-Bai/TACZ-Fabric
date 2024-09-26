@@ -1,4 +1,4 @@
-package com.tacz.guns.compat.iris.pbr;
+package com.tacz.guns.compat.iris.newly.pbr;
 
 import com.tacz.guns.client.resource.texture.FilePackTexture;
 import net.irisshaders.iris.texture.pbr.PBRType;

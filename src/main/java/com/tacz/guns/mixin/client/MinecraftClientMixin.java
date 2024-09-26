@@ -1,9 +1,9 @@
 package com.tacz.guns.mixin.client;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import com.tacz.guns.api.client.event.InputEvent;
 import com.tacz.guns.api.client.event.RenderTickEvent;
 import com.tacz.guns.client.event.InventoryEvent;
+import com.tacz.guns.api.client.event.InputEvent;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.network.ClientPlayerEntity;

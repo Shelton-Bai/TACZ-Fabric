@@ -1,11 +1,11 @@
-package com.tacz.guns.compat.iris;
+package com.tacz.guns.compat.iris.newly;
 
-import com.tacz.guns.compat.iris.pbr.PBRRegister;
+import com.tacz.guns.compat.iris.newly.pbr.PBRRegister;
 import net.irisshaders.batchedentityrendering.impl.FullyBufferedMultiBufferSource;
 import net.irisshaders.iris.shadows.ShadowRenderingState;
 import net.minecraft.client.render.VertexConsumerProvider;
 
-public class IrisCompatInner {
+public class IrisCompatNewly {
     public static boolean isRenderShadow() {
         return ShadowRenderingState.areShadowsCurrentlyBeingRendered();
     }

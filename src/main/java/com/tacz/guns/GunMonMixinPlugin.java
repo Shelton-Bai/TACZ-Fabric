@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
 import java.util.List;
 import java.util.Set;
 
-public class GunModMixinPlugin implements IMixinConfigPlugin {
+public class GunMonMixinPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
@@ -18,7 +18,7 @@ public class GunModMixinPlugin implements IMixinConfigPlugin {
         return switch (mixinClassName) {
             case "com.tacz.guns.mixin.common.RaycastContextMixin" -> !fabricLoader.isModLoaded("porting_lib_base");
             case "com.tacz.guns.mixin.common.CarryOnMixin" -> fabricLoader.isModLoaded(CompatRegistry.CARRY_ON_ID);
-            case "com.tacz.guns.mixin.common.TweakerooItemMixin" -> fabricLoader.isModLoaded("tweakeroo");
+            case "com.tacz.guns.mixin.common.ItemMixinForTweakeroo" -> fabricLoader.isModLoaded("tweakeroo");
             default -> true;
         };
     }
@@ -34,7 +34,8 @@ public class GunModMixinPlugin implements IMixinConfigPlugin {
     }
 
     @Override
-    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {}
+    public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {
+    }
 
     @Override
     public List<String> getMixins() {
@@ -42,8 +43,10 @@ public class GunModMixinPlugin implements IMixinConfigPlugin {
     }
 
     @Override
-    public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
+    public void preApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
+    }
 
     @Override
-    public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {}
+    public void postApply(String targetClassName, ClassNode targetClass, String mixinClassName, IMixinInfo mixinInfo) {
+    }
 }

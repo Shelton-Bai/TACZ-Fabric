@@ -1,7 +1,6 @@
 # Used when a draft is pushed to GitHub
 # This does not make use of any caching as to ensure a clean build
 
-
 name: Build - Draft
 on:
   release:
@@ -28,7 +27,6 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'corretto'
-
           java-version: ${{ matrix.java }}
 
       - name: Setup Gradle

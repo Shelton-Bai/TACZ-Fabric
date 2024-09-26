@@ -1,24 +1,23 @@
 # gradle
+
 .gradle/
 build/
 out/
 classes/
 
 # eclipse
-bin
+
 *.launch
-.settings
-.metadata
-.classpath
-.project
 
 # idea
+
 .idea/
 *.iml
 *.ipr
 *.iws
 
 # vscode
+
 .settings/
 .vscode/
 bin/
@@ -26,19 +25,21 @@ bin/
 .project
 
 # macos
+
 *.DS_Store
 
 # fabric
+
 run/
 
 # java
+
 hs_err_*.log
 replay_*.log
 *.hprof
 *.jfr
 
-# TACZ-Fabric
-/remappedSrc/
+# We-Cant-Coding/TACZ-Fabric
+
 /run-server/
 /backup/
-/libs/
