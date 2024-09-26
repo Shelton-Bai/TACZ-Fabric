@@ -10,6 +10,7 @@ import com.tacz.guns.api.item.IAmmo;
 import com.tacz.guns.api.item.IAmmoBox;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
+import com.tacz.guns.util.item.IItemHandler;
 import com.tacz.guns.network.NetworkHandler;
 import com.tacz.guns.network.packets.s2c.event.GunReloadS2CPacket;
 import com.tacz.guns.resource.index.CommonGunIndex;
@@ -17,7 +18,6 @@ import com.tacz.guns.resource.pojo.data.gun.Bolt;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.resource.pojo.data.gun.GunReloadData;
 import com.tacz.guns.util.AttachmentDataUtils;
-import com.tacz.guns.util.item.IItemHandler;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
@@ -163,7 +163,6 @@ public class LivingEntityReload {
         return reloadState;
     }
 
-    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public static boolean inventoryHasAmmo(LivingEntity shooter, int currentAmmoCount, int maxAmmoCount, ItemStack currentGunItem, IGun iGun) {
         // 超出或达到上限，不换弹
         if (currentAmmoCount >= maxAmmoCount) {

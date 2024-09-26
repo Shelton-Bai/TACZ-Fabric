@@ -1,9 +1,6 @@
 package com.tacz.guns.event;
 
-import com.tacz.guns.entity.sync.core.DataEntry;
-import com.tacz.guns.entity.sync.core.DataHolder;
-import com.tacz.guns.entity.sync.core.SyncedDataKey;
-import com.tacz.guns.entity.sync.core.SyncedEntityData;
+import com.tacz.guns.entity.sync.core.*;
 import com.tacz.guns.network.NetworkHandler;
 import com.tacz.guns.network.packets.s2c.UpdateEntityDataS2CPacket;
 import net.minecraft.entity.Entity;

@@ -6,10 +6,7 @@ import com.google.common.net.PercentEscaper;
 import java.net.URLDecoder;
 import java.nio.ByteBuffer;
 import java.nio.CharBuffer;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.CharsetDecoder;
-import java.nio.charset.CodingErrorAction;
-import java.nio.charset.StandardCharsets;
+import java.nio.charset.*;
 
 public class UriEncoder {
     private static final CharsetDecoder UTF8Decoder;

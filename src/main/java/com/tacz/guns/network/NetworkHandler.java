@@ -76,7 +76,7 @@ public class NetworkHandler {
         RegistryKey<World> dimension = centerEntity.getWorld().getRegistryKey();
         var server = centerEntity.getServer();
         if (server != null) {
-             server.getPlayerManager().sendToDimension(toVanillaPacket(message), dimension);
+            server.getPlayerManager().sendToDimension(toVanillaPacket(message), dimension);
         }
     }
 

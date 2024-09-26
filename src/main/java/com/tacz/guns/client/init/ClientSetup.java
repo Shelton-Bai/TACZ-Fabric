@@ -23,10 +23,14 @@ import committee.nova.mkb.keybinding.KeyModifier;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.fabricmc.fabric.api.client.rendering.v1.TooltipComponentCallback;
 import net.minecraft.client.MinecraftClient;
+import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.gui.tooltip.TooltipComponent;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.item.TooltipData;
 import net.minecraft.client.option.KeyBinding;
+import org.lwjgl.glfw.GLFW;
+
+import java.util.List;
 
 public class ClientSetup {
 
