@@ -133,8 +133,7 @@ dependencies {
 	modApi "fuzs.forgeconfigapiport:forgeconfigapiport-fabric:${project.forgeconfigapiport_version}"
 
 	modCompileOnly "org.embeddedt:embeddium-1.20.1:${project.embeddedt_version}"
-	modCompileOnly "libs:iris:${project.iris_version}"
-	modCompileOnly "libs:iris_legacy:${project.iris_old_version}"
+	modCompileOnly "maven.modrinth:iris:${project.iris_version}"
 	modCompileOnly "maven.modrinth:carry-on:${project.carry_on_version}"
 	modCompileOnly "maven.modrinth:immediatelyfast:${project.immediatelyfast_version}"
 	modCompileOnly "maven.modrinth:zoomify:${project.zoomify_version}"
