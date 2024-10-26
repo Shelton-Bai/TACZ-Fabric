@@ -1,9 +1,8 @@
-package com.tacz.guns.compat.iris.pbr;
+package com.tacz.guns.compat.iris.legacy.pbr;
 
 import com.tacz.guns.client.resource.texture.FilePackTexture;
 import com.tacz.guns.client.resource.texture.ZipPackTexture;
-
-import net.irisshaders.iris.texture.pbr.loader.PBRTextureLoaderRegistry;
+import net.coderbot.iris.texture.pbr.loader.PBRTextureLoaderRegistry;
 
 public class PBRRegister {
     public static void registerPBRLoader() {
